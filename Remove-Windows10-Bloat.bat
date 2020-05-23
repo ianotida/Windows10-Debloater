@@ -97,6 +97,7 @@ Taskkill /IM SearchUI.exe /F
 Taskkill /IM SystemSettings.exe /F
 Taskkill /IM armsvc.exe /F
 
+
 @rem Remove Apps
 PowerShell -Command "Get-AppxPackage *3DBuilder* | Remove-AppxPackage"
 PowerShell -Command "Get-AppxPackage *Getstarted* | Remove-AppxPackage"
@@ -114,17 +115,18 @@ PowerShell -Command "Get-AppxPackage *WindowsSoundRecorder* | Remove-AppxPackage
 PowerShell -Command "Get-AppxPackage *windowscommunicationsapps* | Remove-AppxPackage"
 PowerShell -Command "Get-AppxPackage *zune* | Remove-AppxPackage"
 REM PowerShell -Command "Get-AppxPackage *WindowsCalculator* | Remove-AppxPackage"
+PowerShell -Command "Get-AppxPackage *Maps* | Remove-AppxPackage"
 PowerShell -Command "Get-AppxPackage *Sway* | Remove-AppxPackage"
 PowerShell -Command "Get-AppxPackage *CommsPhone* | Remove-AppxPackage"
 PowerShell -Command "Get-AppxPackage *ConnectivityStore* | Remove-AppxPackage"
 PowerShell -Command "Get-AppxPackage *Microsoft.Messaging* | Remove-AppxPackage"
-PowerShell -Command "Get-AppxPackage *Maps* | Remove-AppxPackage"
 PowerShell -Command "Get-AppxPackage *Facebook* | Remove-AppxPackage"
 PowerShell -Command "Get-AppxPackage *Twitter* | Remove-AppxPackage"
 PowerShell -Command "Get-AppxPackage *Drawboard PDF* | Remove-AppxPackage"
 PowerShell -Command "Get-AppxPackage *Xbox* | Remove-AppxPackage"
 PowerShell -Command "Get-AppxPackage *Help* | Remove-AppxPackage"
 PowerShell -Command "Get-AppxPackage *YourPhone* | Remove-AppxPackage"
+
 
 @rem NOW JUST SOME TWEAKS
 REM *** Show hidden files in Explorer ***
